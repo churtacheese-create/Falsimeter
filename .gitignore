@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+.vs/
+.vscode/
+work/
+outputs/
+publish/
+*.user
+*.suo
+*.log
+TestResults/
+T:/
+config/host-access-policy.lab.json

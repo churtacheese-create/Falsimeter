@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Falsimeter.Core\Falsimeter.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\Falsimeter.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup><Resource Include="Assets\Falsimeter.ico" /><Resource Include="Assets\Falsimeter-title-lockup.png" /></ItemGroup>
+
+  <ItemGroup><Content Include="..\..\corpus\**\*"><Link>corpus\%(RecursiveDir)%(Filename)%(Extension)</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content></ItemGroup>
+
+</Project>

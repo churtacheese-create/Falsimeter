@@ -1,0 +1,15 @@
+{
+  "protectedPaths": [
+    "<protected-folder>"
+  ],
+  "allowedWritePaths": [
+    "<approved-output-folder>"
+  ],
+  "registryPaths": [
+    "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+  ],
+  "serviceNames": [
+    "Ollama"
+  ]
+}

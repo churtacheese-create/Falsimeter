@@ -1,0 +1,52 @@
+<!--
+  Falsimeter Phase 1 telemetry configuration.
+  Review and tailor every Image/TargetFilename rule before deployment. This is
+  scoped to Falsimeter and common local runners; it is not an
+  endpoint-wide monitoring policy.
+-->
+<!-- Sysmon 15.22 schema. Service creation is represented by the scoped
+     RegistryEvent rule; DNS queries are captured separately. -->
+<Sysmon schemaversion="4.91">
+  <HashAlgorithms>SHA256</HashAlgorithms>
+  <EventFiltering>
+    <ProcessCreate onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </ProcessCreate>
+    <FileCreateTime onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </FileCreateTime>
+    <NetworkConnect onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </NetworkConnect>
+    <ProcessAccess onmatch="include">
+      <SourceImage condition="end with">Falsimeter.App.exe</SourceImage>
+    </ProcessAccess>
+    <FileCreate onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </FileCreate>
+    <RegistryEvent onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </RegistryEvent>
+    <DnsQuery onmatch="include">
+      <Image condition="end with">Falsimeter.App.exe</Image>
+      <Image condition="end with">ollama.exe</Image>
+      <Image condition="end with">lms.exe</Image>
+      <Image condition="end with">python.exe</Image>
+    </DnsQuery>
+  </EventFiltering>
+</Sysmon>

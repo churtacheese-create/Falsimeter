@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Falsimeter.App/Falsimeter.App.csproj" />
+    <Project Path="src/Falsimeter.Cli/Falsimeter.Cli.csproj" />
+    <Project Path="src/Falsimeter.Core/Falsimeter.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Falsimeter.Tests/Falsimeter.Tests.csproj" />
+  </Folder>
+</Solution>
