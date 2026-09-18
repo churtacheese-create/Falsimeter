@@ -15,7 +15,7 @@ For host monitoring, Falsimeter can define protected folders, registry keys, ser
 Results are stored locally as structured reports with the selected scope, model identity, evidence, and report hash. A result applies only to the model and conditions that were tested; it is not a blanket statement that a model is safe in every environment. Falsimeter is designed to make limitations visible, preserve evidence for review, and give operators a repeatable basis for approving, restricting, rejecting, or continuing evaluation of a local model.
 
 <p align="center">
-  <img src="src/Falsimeter.App/Assets/Falsimeter-interface-preview-current.png?v=3" alt="Falsimeter interface preview" width="100%">
+  <img src="src/Falsimeter.App/Assets/Falsimeter-interface-preview-current.png?v=4" alt="Falsimeter interface preview" width="100%">
 </p>
 
 Use **Choose tests** to check individual tests, check models in the **Run** column, then select **Run checked**. All selections start empty. See [selected test execution and integration coverage](docs/selected-tests.md). Tests that need local collectors, a protected test boundary, or a local harness show those requirements before they run and do not count as passed when setup is missing.
