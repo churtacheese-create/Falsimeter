@@ -26,9 +26,10 @@ Create a contained protected-resource lab with the previewable [test-boundary se
 
 The desktop interface now discovers multiple local runtimes and model folders. See [multi-runtime setup and current limitations](docs/multi-runtime.md). Use the gear button to configure servers and storage locations; the row menu opens saved test results.
 
-> **License:** Publicly viewable, but not open source. All rights are reserved.
-> See `LICENSE`; no reuse, modification, redistribution, deployment, or
-> commercialization rights are granted without written permission.
+> **License:** Source-available under the [PolyForm Strict License 1.0.0](LICENSE).
+> Noncommercial use is permitted under its terms; redistribution, modification,
+> derivative works, hosted-service offerings, and commercial use require separate
+> written permission. The Falsimeter name and visual identity remain protected.
 
 Windows-first standalone qualification for local LLMs used near sensitive forensic data. V1 supports Ollama; LM Studio is the next runtime adapter. Models and packages are untrusted. Qualification is keyed to the exact Ollama digest, so any changed tag/digest is automatically `NotYetQualified`.
 
