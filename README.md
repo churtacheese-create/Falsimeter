@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/churtacheese-create/Falsimeter/001247ab03e8becd0930fa5c66af5f661a6e99ff/src/Falsimeter.App/Assets/Falsimeter-title-lockup.png" alt="Falsimeter" width="100%">
+  <img src="https://raw.githubusercontent.com/churtacheese-create/Falsimeter/e26aa420925f99a053290313a69e21ee1dc6b5e4/src/Falsimeter.App/Assets/Falsimeter-title-lockup.png" alt="Falsimeter" width="100%">
 </p>
 
 ## Summary
